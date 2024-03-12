@@ -1,15 +1,7 @@
-
-
 import { Link } from "react-router-dom";
+
+
 import styled from "styled-components";
-
-
-export const Group = styled.div`
-  width: 1024px;
-  margin: 80px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`
 
 
 export const Card = styled.div`
@@ -17,6 +9,7 @@ export const Card = styled.div`
   height: 410px;
   margin-top: 48px;
   border: 1px solid #E66767;
+  position: relative;
 
   .titulo {
     margin-top: 8px;
@@ -58,4 +51,10 @@ export const Button = styled(Link)`
   border: none;
   color: #fff;
   text-decoration: none;
+`
+
+export const Infos = styled.div`
+  position: absolute;
+  top: 16px;
+  right: 16px;
 `

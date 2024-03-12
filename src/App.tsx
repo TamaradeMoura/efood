@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import { Global } from "./styles";
 
 
