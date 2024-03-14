@@ -22,7 +22,7 @@ const Conteudo = ({
       <Linha>
         <Infos>
           {infos.map((info) => (
-            <Tag key={info}>{infos}</Tag>
+            <Tag key={info}>{info}</Tag>
           ))}
         </Infos>
       <h3 className='titulo'>{title}</h3>
