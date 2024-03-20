@@ -1,58 +1,65 @@
 import Pratos from "../../models/Pratos"
-
-import macarrao from '../../assets/images/macarrao.png'
-import ContentList from "../../components/ContentList"
+import pizza from '../../assets/images/pizza.png'
+import MenuList from "../../components/MenuList"
 
 
 const cardapio: Pratos[] = [
-    {
+   {
       id: 2,
-      description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar.Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-      title: 'La Dolce Vita Trattoria',
+      description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+      title: 'Pizza Marguerita',
       infos: ['Italiana'],
-      image: macarrao,
+      image: pizza,
       score: '4.9'
     },
     {
       id: 3,
-      description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar.Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-      title: 'La Dolce Vita Trattoria',
+      description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+      title: 'Pizza Marguerita',
       infos: ['Italiana'],
-      image: macarrao,
+      image: pizza,
       score: '4.9'
     },
     {
       id: 4,
-      description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar.Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-      title: 'La Dolce Vita Trattoria',
+      description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+      title: 'Pizza Marguerita',
       infos: ['Italiana'],
-      image: macarrao,
+      image: pizza,
       score: '4.9'
     },
     {
       id: 5,
-      description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar.Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-      title: 'La Dolce Vita Trattoria',
+      description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+      title: 'Pizza Marguerita',
       infos: ['Italiana'],
-      image: macarrao,
+      image: pizza,
       score: '4.9'
     },
     {
       id: 6,
-      description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar.Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
-      title: 'La Dolce Vita Trattoria',
+      description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+      title: 'Pizza Marguerita',
       infos: ['Italiana'],
-      image: macarrao,
+      image: pizza,
+      score: '4.9'
+    },
+    {
+      id: 7,
+      description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+      title: 'Pizza Marguerita',
+      infos: ['Italiana'],
+      image: pizza,
       score: '4.9'
     }
 ]
 
 
 
-const Menu = () => (
+const Categories = () => (
   <div>
-    <ContentList prato={cardapio} />
+    <MenuList prato={cardapio}  />
   </div>
 )
 
-export default Menu
+export default Categories

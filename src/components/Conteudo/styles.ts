@@ -45,12 +45,13 @@ export const Botao = styled.div`
   margin-bottom: 8px;
 `
 export const Button = styled(Link)`
-  margin-left: 8px;
-  margin-top: 16px;
   background-color: #E66767;
   border: none;
   color: #fff;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 700px;
+  padding: 4px 6px;
 `
 
 export const Infos = styled.div`

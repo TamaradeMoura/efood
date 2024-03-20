@@ -1,5 +1,5 @@
 import star from '../../assets/images/estrela.png'
-import {  Button, Card, Infos, Linha, Score } from './styles'
+import {  Botao, Button, Card, Infos, Linha, Score } from './styles'
 import Tag from '../Tag'
 
 type Props = {
@@ -36,9 +36,11 @@ const Conteudo = ({
       <p className='conteudo'>
       {description}
       </p>
+      <Botao>
       <Button to='/Categories'>
         Saiba mais
       </Button>
+      </Botao>
     </Card>
 
 )
