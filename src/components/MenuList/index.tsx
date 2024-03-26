@@ -4,6 +4,9 @@ import List from "../ConteudoList"
 import logo from '../../assets/images/logo.png'
 import fundo from '../../assets/images/fundo.png'
 import apresentacao from '../../assets/images/apresentacao.png'
+import restaurantes from '../../assets/images/Restaurantes.png'
+import carrinho from '../../assets/images/carrinho.png'
+
 
 import { Group, Header, Img } from "./styles"
 
@@ -14,13 +17,13 @@ export type Props = {
 const MenuList = ({prato}: Props) => (
   <>
     <Header style={{backgroundImage: `url(${fundo})`}}>
-      <h2>Restaurantes</h2>
+      <img className="imgEsq" src={restaurantes} alt="restaurantes" />
     <Link to='/'>
       <div className='logo'>
         <img src={logo} alt="logo efood" />
       </div>
     </Link>
-    <h2>0 produto(s) no carrinho</h2>
+    <img className="imgDir" src={carrinho} alt="carrinho" />
     </Header>
     <Img src={apresentacao} alt="imagem massa" />
     <Group>
