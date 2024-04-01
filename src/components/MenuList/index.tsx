@@ -10,12 +10,20 @@ import carrinho from '../../assets/images/carrinho.png'
 
 import { Group, Header, Img } from "./styles"
 
+
 export type Props = {
   prato:  Pratos[]
 }
 
-const MenuList = ({prato}: Props) => (
-  <>
+
+
+
+const MenuList = ({prato}: Props) => {
+
+
+
+  return (
+    <>
     <Header style={{backgroundImage: `url(${fundo})`}}>
       <img className="imgEsq" src={restaurantes} alt="restaurantes" />
     <Link to='/'>
@@ -37,6 +45,7 @@ const MenuList = ({prato}: Props) => (
       ))}
     </Group>
   </>
-)
+  )
+}
 
 export default MenuList

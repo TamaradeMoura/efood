@@ -5,6 +5,7 @@ import sushi from '../../assets/images/sushi.png'
 import macarrao from '../../assets/images/macarrao.png'
 import ContentList from "../../components/ContentList"
 
+
 const produtos: Pratos[] = [
   {
     id: 1,

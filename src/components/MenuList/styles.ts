@@ -22,3 +22,4 @@ export const Group = styled.div`
 export const Img = styled.img`
   width: 100%;
 `
+

@@ -52,6 +52,7 @@ export const Button = styled(Link)`
   font-size: 14px;
   font-weight: 700px;
   padding: 4px 6px;
+  cursor: pointer;
 `
 
 export const Infos = styled.div`
