@@ -66,6 +66,7 @@ export const Card2 = styled.div`
     width: 1024px;
     height: 344px;
     background-color: #E66767;
+    z-index: 1;
 
     .title {
       display: flex;
@@ -101,8 +102,9 @@ export const Img2 = styled.img`
   width: 280px;
   height: 280px;
   object-fit: fill;
-  margin-top: 32px;
+  margin-top: 16px;
   margin-left: 32px;
+  margin-bottom: 16px;
 `
 
 export const Button2 = styled.img`

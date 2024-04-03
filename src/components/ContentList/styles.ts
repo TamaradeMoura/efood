@@ -7,4 +7,6 @@ export const Group = styled.div`
   margin: 80px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 80px;
 `

@@ -17,6 +17,7 @@ export const Group = styled.div`
   margin: 200px auto 120px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
 `
 
 export const Img = styled.img`
