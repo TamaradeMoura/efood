@@ -28,7 +28,8 @@ export const Text = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 80px;
+
 
   p {
     width: 480px;
