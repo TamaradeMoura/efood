@@ -6,8 +6,8 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   width: 472px;
-  height: 410px;
-  margin-top: 48px;
+  height: 398px;
+  margin-top: 80px;
   border: 1px solid #E66767;
   position: relative;
 
@@ -19,7 +19,7 @@ export const Card = styled.div`
   .conteudo {
     width: 456px;
     font-size: 14px;
-    margin-top: 46px;
+    margin-top: 16px;
     margin-left: 8px;
     font-weight: 400px;
   }
@@ -40,9 +40,9 @@ img {
 `
 
 export const Botao = styled.div`
+  margin-top: 30px;
   margin-left: 8px;
-  margin-top: 16px;
-  margin-bottom: 8px;
+
 `
 export const Button = styled(Link)`
   background-color: #E66767;

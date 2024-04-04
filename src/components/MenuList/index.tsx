@@ -8,7 +8,7 @@ import restaurantes from '../../assets/images/Restaurantes.png'
 import carrinho from '../../assets/images/carrinho.png'
 
 
-import { Group, Header, Img } from "./styles"
+import { Group, Header, Header2, Titulo1, Titulo2 } from "./styles"
 
 
 export type Props = {
@@ -33,7 +33,10 @@ const MenuList = ({prato}: Props) => {
     </Link>
     <img className="imgDir" src={carrinho} alt="carrinho" />
     </Header>
-    <Img src={apresentacao} alt="imagem massa" />
+    <Header2 style={{backgroundImage: `url(${apresentacao})`}}>
+      <Titulo1>Italiana</Titulo1>
+      <Titulo2>La Dolce Vita Trattoria</Titulo2>
+    </Header2>
     <Group>
       {prato.map((prato) => (
         <List

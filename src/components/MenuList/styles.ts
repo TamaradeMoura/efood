@@ -20,7 +20,30 @@ export const Group = styled.div`
   gap: 32px;
 `
 
-export const Img = styled.img`
-  width: 100%;
+export const Header2 = styled.header`
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+
+
+`
+
+export const Titulo1 = styled.h1`
+  position: relative;
+  left: 170px;
+  top: 25px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 32px;
+  width: 101px;
+`
+
+export const Titulo2 = styled.h1`
+  position: relative;
+  left: 170px;
+  top: 154px;
+  color: #fff;
+  width: 676px;
+  font-weight: 900;
 `
 

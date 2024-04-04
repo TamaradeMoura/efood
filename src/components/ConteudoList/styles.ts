@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Card1 = styled.div`
     width: 320px;
     height: 338px;
-    margin-top: 40px;
+    margin-top: 54px;
     background-color: #E66767;
 
     h2 {
@@ -17,6 +17,7 @@ export const Card1 = styled.div`
       font-size: 14px;
       line-height: 22px;
       margin: 8px 8px;
+      font-weight: 400;
     }
 `
 
@@ -33,8 +34,9 @@ export const Button1 = styled.button`
   height: 24px;
   background-color: #FFEBD9;
   border: none;
-  margin: 2px 8px 8px;
+  margin: 2px 8px;
   cursor: pointer;
+  font-weight: 700;
 `
 
 export const StyleModal = styled.div`
