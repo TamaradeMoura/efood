@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+
 import Pratos from "../../models/Pratos"
 import List from "../ConteudoList"
 import logo from '../../assets/images/logo.png'
@@ -8,7 +9,7 @@ import restaurantes from '../../assets/images/Restaurantes.png'
 import carrinho from '../../assets/images/carrinho.png'
 
 
-import { Group, Header, Header2, Titulo1, Titulo2 } from "./styles"
+import { Group, Header, Header2, Titulo1 } from "./styles"
 
 
 export type Props = {
@@ -25,17 +26,23 @@ const MenuList = ({prato}: Props) => {
   return (
     <>
     <Header style={{backgroundImage: `url(${fundo})`}}>
-      <img className="imgEsq" src={restaurantes} alt="restaurantes" />
-    <Link to='/'>
-      <div className='logo'>
-        <img src={logo} alt="logo efood" />
+      <div className="imgEsq">
+        <img src={restaurantes} alt="restaurantes" />
       </div>
-    </Link>
-    <img className="imgDir" src={carrinho} alt="carrinho" />
+      <div className="logo">
+        <Link to='/'>
+          <img src={logo} alt="logo efood" />
+        </Link>
+      </div>
+    <div className="imgDir">
+      <img src={carrinho} alt="carrinho" />
+    </div>
     </Header>
     <Header2 style={{backgroundImage: `url(${apresentacao})`}}>
-      <Titulo1>Italiana</Titulo1>
-      <Titulo2>La Dolce Vita Trattoria</Titulo2>
+      <Titulo1>
+        <h1>Italiana</h1>
+        <h1 className="segundo">La Dolce Vita Trattoria</h1>
+      </Titulo1>
     </Header2>
     <Group>
       {prato.map((prato) => (

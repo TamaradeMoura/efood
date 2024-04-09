@@ -14,7 +14,7 @@ export const Cabecalho = styled.header`
 export const Titulo = styled.div`
     width: 539px;
     height: 84px;
-    margin: 180px auto;
+    margin: 138px auto;
 
     h1 {
       font-size: 36px;
