@@ -16,7 +16,7 @@ export const Header = styled.header`
   .imgDir {
     display: flex;
     align-items: center;
-    margin-right: 350px;
+    margin-right: 450px;
   }
 
   .logo {
@@ -24,6 +24,7 @@ export const Header = styled.header`
     align-items: center;
     margin: 0 auto;
   }
+
 
   `
 
@@ -49,6 +50,7 @@ export const Titulo1 = styled.div`
   flex-direction: column;
   margin-left: 450px;
 
+
   h1 {
     color: #fff;
     font-weight: 100;
@@ -62,7 +64,5 @@ export const Titulo1 = styled.div`
     font-size: 32px;
     margin-top: 156px;
   }
-
-
 `
 
