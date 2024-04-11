@@ -10,7 +10,7 @@ export const Header = styled.header`
   .imgEsq {
     display: flex;
     align-items: center;
-    margin-left: 350px;
+    margin-left: 450px;
   }
 
   .imgDir {
@@ -47,7 +47,7 @@ export const Header2 = styled.header`
 export const Titulo1 = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 350px;
+  margin-left: 450px;
 
   h1 {
     color: #fff;
