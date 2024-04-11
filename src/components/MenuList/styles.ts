@@ -10,13 +10,13 @@ export const Header = styled.header`
   .imgEsq {
     display: flex;
     align-items: center;
-    margin-left: 170px;
+    margin-left: 250px;
   }
 
   .imgDir {
     display: flex;
     align-items: center;
-    margin-right: 160px;
+    margin-right: 250px;
   }
 
   .logo {
@@ -24,7 +24,8 @@ export const Header = styled.header`
     align-items: center;
     margin: 0 auto;
   }
-`
+
+  `
 
 export const Group = styled.div`
   width: 1024px;
@@ -46,7 +47,7 @@ export const Header2 = styled.header`
 export const Titulo1 = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 170px;
+  margin-left: 250px;
 
   h1 {
     color: #fff;
