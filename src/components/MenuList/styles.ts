@@ -15,6 +15,10 @@ export const Header = styled.header`
     @media (min-width: 2560px) {
       margin-left: 740px;
     }
+
+    @media (max-width: 1919px) {
+      margin-left: 150px;
+    }
   }
 
   .imgDir {
@@ -24,6 +28,10 @@ export const Header = styled.header`
 
     @media (min-width: 2560px) {
       margin-right: 740px;
+    }
+
+    @media (max-width: 1919px) {
+      margin-right: 150px;
     }
   }
 
@@ -75,6 +83,10 @@ export const Titulo1 = styled.div`
 
   @media (min-width: 2560px) {
     margin-left: 740px;
+  }
+
+  @media (max-width: 1919px) {
+    margin-left: 150px;
   }
 `
 
