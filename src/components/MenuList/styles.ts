@@ -11,12 +11,20 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     margin-left: 450px;
+
+    @media (min-width: 2560px) {
+      margin-left: 740px;
+    }
   }
 
   .imgDir {
     display: flex;
     align-items: center;
     margin-right: 450px;
+
+    @media (min-width: 2560px) {
+      margin-right: 740px;
+    }
   }
 
   .logo {
@@ -63,6 +71,10 @@ export const Titulo1 = styled.div`
     font-weight: 900;
     font-size: 32px;
     margin-top: 156px;
+  }
+
+  @media (min-width: 2560px) {
+    margin-left: 740px;
   }
 `
 
