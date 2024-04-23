@@ -1,4 +1,4 @@
-import Pratos from "../../models/Pratos"
+import { Pratos } from '../../pages/Home'
 import Conteudo from "../Conteudo"
 import { Group } from "./styles"
 

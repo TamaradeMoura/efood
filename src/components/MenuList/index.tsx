@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
-
-import Pratos from "../../models/Pratos"
+import { Pratos } from '../../pages/Home'
 import List from "../ConteudoList"
 import logo from '../../assets/images/logo.png'
 import fundo from '../../assets/images/fundo.png'

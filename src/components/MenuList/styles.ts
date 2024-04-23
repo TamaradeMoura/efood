@@ -12,7 +12,7 @@ export const Header = styled.header`
     align-items: center;
     margin-left: 450px;
 
-    @media (min-width: 2560px) {
+    @media (min-width: 2506px) {
       margin-left: 740px;
     }
 
@@ -26,7 +26,7 @@ export const Header = styled.header`
     align-items: center;
     margin-right: 450px;
 
-    @media (min-width: 2560px) {
+    @media (min-width: 2506px) {
       margin-right: 740px;
     }
 
@@ -81,12 +81,12 @@ export const Titulo1 = styled.div`
     margin-top: 156px;
   }
 
-  @media (min-width: 2560px) {
+  @media (min-width: 2506px) {
     margin-left: 740px;
   }
 
-  @media (max-width: 1919px) {
-    margin-left: 150px;
+  @media (max-width: 1879px) {
+    margin-left: 130px;
   }
 `
 
