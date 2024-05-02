@@ -21,7 +21,7 @@ const Conteudo = ({
       <img src={image} alt={title} />
       <Linha>
         <Infos>
-          {infos.map((info) => (
+          {infos && infos.map((info) => (
             <Tag key={info}>{info}</Tag>
           ))}
         </Infos>

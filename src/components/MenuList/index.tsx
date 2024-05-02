@@ -20,8 +20,6 @@ export type Props = {
 
 const MenuList = ({prato}: Props) => {
 
-
-
   return (
     <>
     <Header style={{backgroundImage: `url(${fundo})`}}>
