@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Card1 = styled.div`
     width: 320px;
-    height: 338px;
+    height: 420px;
     margin-top: 54px;
     background-color: #E66767;
 
@@ -14,7 +14,7 @@ export const Card1 = styled.div`
 
     p {
       color: #FFEBD9;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 22px;
       margin: 8px 8px;
       font-weight: 400;
@@ -23,6 +23,8 @@ export const Card1 = styled.div`
 
 export const Img1 = styled.img`
   margin: 8px 8px;
+  width: 304px;
+  height: 167px;
 `
 
 export const Button1 = styled.button`

@@ -23,6 +23,11 @@ export const Card = styled.div`
     margin-left: 8px;
     font-weight: 400px;
   }
+
+  .imgCapa {
+    width: 470px;
+    height: 217px;
+  }
 `
 
 export const Linha = styled.div`
@@ -40,7 +45,7 @@ img {
 `
 
 export const Botao = styled.div`
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 8px;
 
 `

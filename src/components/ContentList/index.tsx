@@ -11,11 +11,13 @@ const ContentList = ({prato}: Props) => (
     {prato.map((prato) => (
       <Conteudo
         key={prato.id}
-        description={prato.description}
-        image={prato.image}
-        infos={prato.infos}
-        title={prato.title}
-        score={prato.score}
+        description={prato.descricao}
+        image={prato.capa}
+        title={prato.titulo}
+        score={prato.avaliacao}
+        types={prato.tipo}
+
+
       />
     ))}
   </Group>

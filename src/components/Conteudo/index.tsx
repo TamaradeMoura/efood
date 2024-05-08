@@ -5,25 +5,23 @@ import Tag from '../Tag'
 type Props = {
   title: string
   description: string
-  infos: string[]
   image: string
   score: string
+  types: string
 }
 
 const Conteudo = ({
   title,
   description,
-  infos,
+  types,
   image,
   score
 }: Props) => (
     <Card>
-      <img src={image} alt={title} />
+      <img className='imgCapa' src={image} alt={title} />
       <Linha>
         <Infos>
-          {infos && infos.map((info) => (
-            <Tag key={info}>{info}</Tag>
-          ))}
+            <Tag>{types}</Tag>
         </Infos>
       <h3 className='titulo'>{title}</h3>
       <Score>

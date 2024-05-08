@@ -5,11 +5,16 @@ import { useEffect, useState } from "react"
 
 export type Pratos = {
   id: number
-  description: string
-  title: string
-  infos: string[]
-  image: string
-  score: string
+  descricao: string
+  titulo: string
+  destacado: boolean
+  tipo: string
+  avaliacao: string
+  capa: string
+  cardapio: string[]
+  porcao: string
+  foto: string
+  preco: number
 }
 
 const Home = () => {
@@ -20,6 +25,7 @@ const Home = () => {
     .then((res) => res.json())
     .then((res) => setProdutos(res))
   }, [])
+
 
   return (
     <>

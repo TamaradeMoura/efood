@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Pratos } from '../../pages/Home'
+import { Cardapio } from "../../pages/categories"
 import List from "../ConteudoList"
 import logo from '../../assets/images/logo.png'
 import fundo from '../../assets/images/fundo.png'
@@ -12,13 +12,13 @@ import { Group, Header, Header2, Titulo1 } from "./styles"
 
 
 export type Props = {
-  prato:  Pratos[]
+  card:  Cardapio[]
 }
 
 
 
 
-const MenuList = ({prato}: Props) => {
+const MenuList = ({card}: Props) => {
 
   return (
     <>
@@ -42,12 +42,12 @@ const MenuList = ({prato}: Props) => {
       </Titulo1>
     </Header2>
     <Group>
-      {prato.map((prato) => (
+      {card.map((card) => (
         <List
-        key={prato.id}
-        description={prato.description}
-        image={prato.image}
-        title={prato.title}
+        key={card.id}
+        description={card.descricao}
+        image={card.foto}
+        title={card.nome}
         />
       ))}
     </Group>
