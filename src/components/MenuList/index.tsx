@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Cardapio } from "../../pages/categories"
+import { Cardapio } from "../../pages/Home"
 import List from "../ConteudoList"
 import logo from '../../assets/images/logo.png'
 import fundo from '../../assets/images/fundo.png'
@@ -11,14 +11,14 @@ import carrinho from '../../assets/images/carrinho.png'
 import { Group, Header, Header2, Titulo1 } from "./styles"
 
 
-export type Props = {
-  card:  Cardapio[]
+type Props = {
+  prato:  Cardapio[]
 }
 
 
 
 
-const MenuList = ({card}: Props) => {
+const MenuList = ({prato}: Props) => {
 
   return (
     <>
@@ -42,12 +42,12 @@ const MenuList = ({card}: Props) => {
       </Titulo1>
     </Header2>
     <Group>
-      {card.map((card) => (
+      {prato.map((cardapio) => (
         <List
-        key={card.id}
-        description={card.descricao}
-        image={card.foto}
-        title={card.nome}
+        key={cardapio.id}
+        description={cardapio.descricao}
+        image={cardapio.foto}
+        title={cardapio.nome}
         />
       ))}
     </Group>

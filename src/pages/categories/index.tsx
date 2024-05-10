@@ -1,18 +1,11 @@
 import { useEffect, useState } from "react"
 import MenuList from "../../components/MenuList"
 
-export type Cardapio = {
-  foto: string
-  preco: number
-  id: number
-  nome: string
-  descricao: string
-  porcao: string
-}
+import { Pratos } from '../Home'
 
 
 const Categories = () => {
-  const [cardapio, setCardapio] = useState<Cardapio[]>([])
+  const [cardapio, setCardapio] = useState<Pratos[]>([])
 
   useEffect(() => {
     fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes')
@@ -22,7 +15,7 @@ const Categories = () => {
 
   return (
     <div>
-    <MenuList card={cardapio}  />
+    <MenuList prato={cardapio}  />
   </div>
   )
 }

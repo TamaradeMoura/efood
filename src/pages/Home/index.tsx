@@ -2,6 +2,15 @@ import Header from "../../components/Header"
 import ContentList from "../../components/ContentList"
 import { useEffect, useState } from "react"
 
+export interface Cardapio {
+  nome: string
+  foto: string
+  preco: number
+  porcao: string
+  id: number
+  descricao: string
+}
+
 
 export type Pratos = {
   id: number
@@ -11,10 +20,11 @@ export type Pratos = {
   tipo: string
   avaliacao: string
   capa: string
-  cardapio: string[]
-  porcao: string
   foto: string
   preco: number
+  nome: string
+  porcao: string
+  cardapio: Cardapio[]
 }
 
 const Home = () => {
