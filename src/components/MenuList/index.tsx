@@ -11,7 +11,7 @@ import carrinho from '../../assets/images/carrinho.png'
 import { Group, Header, Header2, Titulo1 } from "./styles"
 
 
-type Props = {
+export type Props = {
   prato:  Cardapio[]
 }
 
