@@ -16,8 +16,6 @@ const ContentList = ({prato}: Props) => (
         title={prato.titulo}
         score={prato.avaliacao}
         types={prato.tipo}
-
-
       />
     ))}
   </Group>

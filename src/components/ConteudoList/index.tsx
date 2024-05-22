@@ -1,4 +1,4 @@
-import { useState } from "react"
+import {  useState } from "react"
 
 import pizza from '../../assets/images/pizza.png'
 import botao from '../../assets/images/botao.png'
@@ -6,6 +6,8 @@ import fechar from '../../assets/images/close.png'
 
 
 import { Button1, Button2, Card1, Card2, Close, Food, Img1, Img2, StyleModal } from "./styles"
+
+
 
 
 type Props = {
