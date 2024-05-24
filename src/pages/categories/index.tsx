@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
-import MenuList from "../../components/MenuList"
 import { useParams } from "react-router-dom"
 
-export type menu =
-  {
+import MenuList from "../../components/MenuList"
+import Header2 from "../../components/Header2"
+import Banner from "../../components/Banner"
+
+export type menu = {
   id: number
   nome: string
   foto: string
@@ -34,9 +36,11 @@ const Categories = () => {
 
 
   return (
-    <div>
+    <>
+    <Header2 />
+    <Banner titulo={perfil.titulo} tipo={perfil.tipo} capa={perfil.capa}/>
     <MenuList prato={perfil.cardapio}  />
-  </div>
+    </>
   )
 }
 

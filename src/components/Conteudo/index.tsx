@@ -8,6 +8,7 @@ type Props = {
   image: string
   score: string
   types: string
+  id: number
 }
 
 const Conteudo = ({
@@ -15,7 +16,8 @@ const Conteudo = ({
   description,
   types,
   image,
-  score
+  score,
+  id,
 }: Props) => (
     <Card>
       <img className='imgCapa' src={image} alt={title} />
@@ -35,7 +37,7 @@ const Conteudo = ({
       {description}
       </p>
       <Botao>
-      <Button to='/Categories'>
+      <Button to={`/Categories/${id}`}>
         Saiba mais
       </Button>
       </Botao>

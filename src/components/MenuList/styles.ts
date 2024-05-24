@@ -1,49 +1,6 @@
 
 import styled from "styled-components";
 
-
-export const Header = styled.header`
-  width: 100%;
-  height: 186px;
-  display: flex;
-
-  .imgEsq {
-    display: flex;
-    align-items: center;
-    margin-left: 450px;
-
-    @media (min-width: 2506px) {
-      margin-left: 740px;
-    }
-
-    @media (max-width: 1919px) {
-      margin-left: 150px;
-    }
-  }
-
-  .imgDir {
-    display: flex;
-    align-items: center;
-    margin-right: 450px;
-
-    @media (min-width: 2506px) {
-      margin-right: 740px;
-    }
-
-    @media (max-width: 1919px) {
-      margin-right: 150px;
-    }
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-
-  `
-
 export const Group = styled.div`
   width: 1024px;
   max-width: 100%;
@@ -51,42 +8,5 @@ export const Group = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
-`
-
-export const Header2 = styled.header`
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 280px;
-
-
-`
-
-export const Titulo1 = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 450px;
-
-
-  h1 {
-    color: #fff;
-    font-weight: 100;
-    font-size: 32px;
-    margin-top: 24px;
-  }
-
-  .segundo {
-    color: #fff;
-    font-weight: 900;
-    font-size: 32px;
-    margin-top: 156px;
-  }
-
-  @media (min-width: 2506px) {
-    margin-left: 740px;
-  }
-
-  @media (max-width: 1879px) {
-    margin-left: 130px;
-  }
 `
 

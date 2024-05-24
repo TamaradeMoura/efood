@@ -100,6 +100,10 @@ export const Food = styled.div`
       line-height: 22px;
       margin-top: 16px;
     }
+
+    .p2 {
+      margin-top: 35px;
+    }
 `
 
 export const Img2 = styled.img`
