@@ -1,13 +1,13 @@
 import {  useState } from "react"
+import { useDispatch } from 'react-redux'
 
-//import pizza from '../../assets/images/pizza.png'
 import botao from '../../assets/images/botao.png'
 import fechar from '../../assets/images/close.png'
 
 
 import { Button1, Button2, Card1, Card2, Close, Food, Img1, Img2, StyleModal } from "./styles"
-
-
+import { open, add } from '../store/reducers/cart'
+import { menu } from "../../pages/categories"
 
 
 type Props = {
@@ -18,6 +18,7 @@ type Props = {
   foto: string
   porcao: string
   descricao: string
+  prato: menu
 }
 
  export interface ModalState {
@@ -25,7 +26,7 @@ type Props = {
 }
 
 
-const List = ({title, description, image, nome, foto, porcao, descricao}: Props) => {
+const List = ({title, description, image, nome, foto, porcao, descricao, prato }: Props) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false,
   })
@@ -34,6 +35,13 @@ const List = ({title, description, image, nome, foto, porcao, descricao}: Props)
     setModal({
       isVisible: false
     })
+  }
+
+  const dispatch = useDispatch()
+
+  const addToCart = () => {
+    dispatch(add(prato))
+    dispatch(open())
   }
 
   return (
@@ -61,7 +69,7 @@ const List = ({title, description, image, nome, foto, porcao, descricao}: Props)
       <h2>{nome}</h2>
       <p>{descricao}</p>
       <p className="p2">{porcao}</p>
-      <Button2 src={botao} alt="botao compra" />
+      <Button2 src={botao} onClick={addToCart} alt="botao compra" />
       </Food>
     </div>
   </Card2>
