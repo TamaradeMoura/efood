@@ -27,7 +27,8 @@ const MenuList = ({prato}: Props) => {
           nome={item.nome}
           foto={item.foto}
           porcao={item.porcao}
-          descricao={item.descricao} />
+          descricao={item.descricao}
+          id={item.id} />
       ))}
     </Group>
   </>

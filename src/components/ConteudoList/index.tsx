@@ -7,7 +7,6 @@ import fechar from '../../assets/images/close.png'
 
 import { Button1, Button2, Card1, Card2, Close, Food, Img1, Img2, StyleModal } from "./styles"
 import { open, add } from '../store/reducers/cart'
-import { menu } from "../../pages/categories"
 
 
 type Props = {
@@ -18,7 +17,7 @@ type Props = {
   foto: string
   porcao: string
   descricao: string
-  prato: menu
+  id: number
 }
 
  export interface ModalState {
@@ -26,7 +25,7 @@ type Props = {
 }
 
 
-const List = ({title, description, image, nome, foto, porcao, descricao, prato }: Props) => {
+const List = ({title, description, image, nome, foto, porcao, descricao, id }: Props) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false,
   })
@@ -40,7 +39,7 @@ const List = ({title, description, image, nome, foto, porcao, descricao, prato }
   const dispatch = useDispatch()
 
   const addToCart = () => {
-    dispatch(add(prato))
+    dispatch(add(id))
     dispatch(open())
   }
 
