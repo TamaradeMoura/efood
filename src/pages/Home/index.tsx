@@ -1,9 +1,11 @@
 import Header from "../../components/Header"
 import ContentList from "../../components/ContentList"
-import { useEffect, useState } from "react"
+import { useGetPratoQuery } from "../../services/api"
+import { menu } from "../categories"
 
 
 export type Pratos = {
+  cardapio: menu[]
   id: number
   descricao: string
   titulo: string
@@ -14,21 +16,19 @@ export type Pratos = {
 }
 
 const Home = () => {
-  const [produtos, setProdutos] = useState<Pratos[]>([])
+  const { data: produtos } = useGetPratoQuery()
 
-  useEffect(() => {
-    fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes')
-    .then((res) => res.json())
-    .then((res) => setProdutos(res))
-  }, [])
+  if (produtos) {
+    return (
+      <>
+      <Header />
+      <ContentList prato={produtos} />
+    </>
+    )
+  }
 
+  return <h4>Carregando...</h4>
 
-  return (
-    <>
-    <Header />
-    <ContentList prato={produtos} />
-  </>
-  )
 }
 
 export default Home

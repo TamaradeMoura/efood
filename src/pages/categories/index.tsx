@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-
 import MenuList from "../../components/MenuList"
 import Header2 from "../../components/Header2"
 import Banner from "../../components/Banner"
+import { useGetMenuQuery } from "../../services/api"
 
 export type menu = {
   id: number
@@ -24,24 +22,20 @@ export type Cardapio = {
 
 
 const Categories = () => {
-  const { id } = useParams()
-  const [perfil, setPerfil] = useState<Cardapio>({} as Cardapio)
+  const { data: perfil } = useGetMenuQuery()
 
-  useEffect(() => {
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`)
-    .then((res) => res.json())
-    .then((res) => setPerfil(res))
-  }, [id])
+  if(perfil) {
+    return (
+      <>
+      <Header2 />
+      <Banner titulo={perfil.titulo} tipo={perfil.tipo} capa={perfil.capa}/>
+      <MenuList prato={perfil.cardapio}  />
+      </>
+    )
+  }
 
+  return <h4>Carregando...</h4>
 
-
-  return (
-    <>
-    <Header2 />
-    <Banner titulo={perfil.titulo} tipo={perfil.tipo} capa={perfil.capa}/>
-    <MenuList prato={perfil.cardapio}  />
-    </>
-  )
 }
 
 export default Categories

@@ -6,7 +6,7 @@ import fechar from '../../assets/images/close.png'
 
 
 import { Button1, Button2, Card1, Card2, Close, Food, Img1, Img2, StyleModal } from "./styles"
-import { open, add } from '../store/reducers/cart'
+import { open } from '../store/reducers/cart'
 
 
 type Props = {
@@ -25,7 +25,7 @@ type Props = {
 }
 
 
-const List = ({title, description, image, nome, foto, porcao, descricao, id }: Props) => {
+const List = ({title, description, image, nome, foto, porcao, descricao }: Props) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false,
   })
@@ -39,7 +39,6 @@ const List = ({title, description, image, nome, foto, porcao, descricao, id }: P
   const dispatch = useDispatch()
 
   const addToCart = () => {
-    dispatch(add(id))
     dispatch(open())
   }
 
