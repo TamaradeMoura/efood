@@ -2,6 +2,7 @@ import MenuList from "../../components/MenuList"
 import Header2 from "../../components/Header2"
 import Banner from "../../components/Banner"
 import { useGetMenuQuery } from "../../services/api"
+import { useParams } from "react-router-dom"
 
 export type menu = {
   id: number
@@ -22,7 +23,8 @@ export type Cardapio = {
 
 
 const Categories = () => {
-  const { data: perfil } = useGetMenuQuery()
+  const { id } = useParams()
+  const { data: perfil } = useGetMenuQuery(id!)
 
   if(perfil) {
     return (

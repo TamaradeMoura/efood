@@ -23,7 +23,7 @@ const cartSlice = createSlice({
       if(!prato) {
         state.items.push(action.payload)
       } else {
-        alert('Op prato já está no carrinho')
+        alert('O prato já está no carrinho')
       }
     },
 
